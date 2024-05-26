@@ -1,0 +1,234 @@
+/* MAIN : VISUAL */
+.main .item {
+    height: 100vh;
+}
+
+.main .item .txt_wrap h1 {
+    padding-bottom: 20px;
+    max-width: 650px;
+}
+
+.main .item .txt_wrap p {
+    font-size: 1.5rem;
+}
+
+.main .slick-dotted.slick-slider {
+    margin: 0;
+}
+
+.main .slick-dots {
+    bottom: 40px;
+    text-align: center;
+}
+
+.main .slick-dots li {
+    margin: 0 9px;
+    width: 100px;
+    height: 4px;
+}
+
+.main .slick-dots li button {
+    width: 100%;
+    height: inherit;
+    padding: 0;
+    font-size: 0;
+    opacity: .3;
+    margin-right: 10px;
+    background-color: #fff;
+}
+
+.main .slick-dots li button:before {
+    width: inherit;
+    height: inherit;
+    font-size: 0;
+    opacity: .35;
+    color: #5C88DA;
+    content: '';
+}
+
+.main .slick-dots li.slick-active button {
+    opacity: 1;
+}
+
+.main .slick-dots li.slick-active button:before {
+    font-size: 0;
+    color: #5C88DA;
+    width: 100px;
+    height: 4px;
+    background: #fff;
+    content: '';
+}
+
+/*// MAIN : VISUAL */
+
+/* MAIN : CONTENTS*/
+
+.main_con {
+    height: inherit;
+    padding: 200px 0;
+}
+
+.main_con .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: calc(100vh - 114px);
+}
+
+.main_con .main_txt {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 470px;
+    box-sizing: border-box;
+    color: #666;
+    float: left;
+}
+
+.main_con .main_txt .title {
+    padding-bottom: 50px;
+    font-weight: 600;
+    color: #000;
+    letter-spacing: -0.025em;
+}
+
+.main_con .main_txt .sub_txt {
+    font-size: 1.125rem;
+}
+
+.main_con .banner_wrap {
+    position: absolute;
+    width: calc(50%);
+    height: 830px;
+    box-sizing: border-box;
+    right: 0;
+}
+
+.main_con .banner_wrap .banner_img {
+    height: 830px;
+    overflow: hidden;
+    background: url('../images/bg_image.jpg') center center / cover no-repeat;
+}
+
+.main_con .layer {
+    background: #386BFB;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    height: calc(100vh - 114px);
+}
+
+.main_con.info {
+    position: relative;
+    padding: 0;
+}
+
+.main_con.info article {
+    width: 50%;
+}
+
+.main_con.info .section_inner {
+    padding: 0 84px;
+}
+
+.main_con.info .main_txt {
+    max-width: 400px;
+}
+
+.main_con.info .main_txt .title,
+.main_con.info .main_txt .sub_title {
+    padding-bottom: 40px;
+}
+
+.vision .main_txt .title,
+.vision .main_txt .sub_txt,
+.vision .main_txt .sub_title {
+    color: #ffffff;
+}
+
+@media screen and (max-width: 1020px) {
+    .main .item .txt_wrap h1 {
+        font-size: 32px;
+        letter-spacing: -0.025em;
+    }
+
+    .main .slick-dots li,
+    .main .slick-dots li.slick-active button:before {
+        width: 60px;
+    }
+
+    .spot .txt_wrap.container, .spot .main_txt {
+        padding: 0 20px;
+    }
+
+    .main_con {
+        padding: 0;
+    }
+
+    .main_con:first-child .main_txt {
+        transform: none;
+        top: initial;
+    }
+
+    .main_con .main_txt, .main_con .banner_wrap, .main_con.info article {
+        position: relative;
+        width: 100%;
+        float: none;
+    }
+
+    .main_con .inner {
+        max-width: 1200px;
+        margin: 0 auto;
+        height: initial;
+    }
+
+    .main_con.info .section_inner {
+        padding: 0;
+    }
+
+    .main_con.info .main_txt {
+        padding: 0 20px;
+    }
+
+    .main_con.info .main_contents.inner {
+        padding: 200px 0;
+    }
+
+    .main_con.info .vision .inner {
+        background: #386BFB;
+    }
+
+    .main_con .layer {
+        width: 100%;
+        display: none;
+    }
+
+    .main_con .lt {
+        float: none;
+    }
+
+    .main_con .main_txt, .main_con.info .main_txt {
+        max-width: initial;
+        top: initial;
+        transform: none;
+    }
+
+    .main_con .main_txt .sub_title {
+        font-size: 20px;
+    }
+
+    .main_con .main_txt .sub_txt {
+        font-size: 15px;
+    }
+
+    .main_con .main_txt {
+        top: inherit;
+        transform: none;
+        padding: 120px 20px 80px;
+    }
+
+    .main_con .banner_wrap, .main_con .banner_wrap .banner_img {
+        height: 480px;
+    }
+}
